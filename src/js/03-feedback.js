@@ -35,7 +35,7 @@ function onFormSubmit(events) {
   events.preventDefault();
   formEl.reset();
 
-  console.log(localStorage);
+  console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
 
   localStorage.removeItem('feedback-form-state');
 }
